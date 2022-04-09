@@ -32,10 +32,7 @@ body {
     text-align: center;
 }
 
-.grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
+
 
 .white {
     color: var(--white) ;
@@ -79,4 +76,21 @@ button:hover{
     background-color: var(--box-clr);
     margin: 1em 0 0 ;
     padding: 1em 3em;
+}
+
+.grid {
+    flex-direction: column;
+}
+
+@media (min-width: 800px) {
+    .grid {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .container {
+        padding: 2em 15em;
+    }
 }
