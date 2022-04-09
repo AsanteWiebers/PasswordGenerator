@@ -1,0 +1,27 @@
+:root {
+
+    --dark:#111827;
+    --btn-green: #10B981;
+    --grey: #D5D4D8;
+
+    --ff-karla-serif: 'Karla', sans-serif;
+    --ff-inter-serif: 'Inter', sans-serif;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 2em 0;
+}
+
+.grid {
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(2fr);
+}
