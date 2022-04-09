@@ -3,6 +3,7 @@
     --dark:#111827;
     --btn-green: #10B981;
     --grey: #D5D4D8;
+    --white: #F5F5F5;
 
     --ff-karla-serif: 'Karla', sans-serif;
     --ff-inter-serif: 'Inter', sans-serif;
@@ -17,11 +18,45 @@
     padding: 0;
 }
 
+body {
+    line-height: 1.5;
+    background: var(--dark);
+}
+
 .container {
-    padding: 2em 0;
+    padding: 5em 0;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .grid {
     grid-template-columns: repeat(1fr);
     grid-template-rows: repeat(2fr);
+}
+
+.white {
+    color: var(--white) ;
+}
+.green {
+    color: var(--btn-green);
+}
+.grey {
+    color: var(--grey);
+}
+
+h1,
+h2 {
+    font-family: var(--ff-inter-serif);
+}
+
+p {
+    font-family: var(--ff-inter-serif);
+}
+
+button {
+    background-color: var(--btn-green);
+    color: var(--white);
+    border: none;
+    margin: 1em 0;
+    padding: .5em 5em ;
 }
