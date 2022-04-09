@@ -1,6 +1,9 @@
 :root {
 
     --dark:#111827;
+    --box-clr: #273549;
+
+
     --btn-green: #10B981;
     --grey: #D5D4D8;
     --white: #F5F5F5;
@@ -24,14 +27,14 @@ body {
 }
 
 .container {
-    padding: 5em 0;
+    padding: 5em 2em;
     margin: 0 auto;
     text-align: center;
 }
 
 .grid {
-    grid-template-columns: repeat(1fr);
-    grid-template-rows: repeat(2fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .white {
@@ -44,13 +47,13 @@ body {
     color: var(--grey);
 }
 
-h1,
 h2 {
     font-family: var(--ff-inter-serif);
 }
 
 p {
     font-family: var(--ff-inter-serif);
+    margin: 1em 0 0 ;
 }
 
 button {
@@ -59,4 +62,21 @@ button {
     border: none;
     margin: 1em 0;
     padding: .5em 5em ;
+}
+
+button:hover{
+    background-color: red;
+    cursor: pointer;
+    transition: 900ms;
+}
+
+.line {
+    border-top: 2px solid var(--grey);
+    margin: 1em 0 5em;
+}
+
+.box {
+    background-color: var(--box-clr);
+    margin: 1em 0 0 ;
+    padding: 1em 3em;
 }
